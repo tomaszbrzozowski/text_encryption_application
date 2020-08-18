@@ -1,1 +1,1 @@
-# text_encryption_application
+Aplikacja do której logujemy się za pomocą loginu admin i hasła admin a następnie po zalogowaniu do danej aplikacji możemy wpisać dowolny tekst który, po kliknięciu przycisku jest szyfrowany w zależności który przycisk nacisnęliśmy
