@@ -89,10 +89,8 @@ namespace WindowsFormsApp1
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    //Get the path of specified file
                     filePath = openFileDialog.FileName;
 
-                    //Read the contents of the file into a stream
                     var fileStream = openFileDialog.OpenFile();
 
                     using (StreamReader reader = new StreamReader(fileStream))
@@ -102,7 +100,6 @@ namespace WindowsFormsApp1
                 }
             }
             richTextBox1.Text = fileContent;
-            //MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
         }
 
         private void zapiszToolStripMenuItem_Click(object sender, EventArgs e)
@@ -119,7 +116,6 @@ namespace WindowsFormsApp1
                 if ((myStream = saveFileDialog1.OpenFile()) != null)
                 {
                     myStream.Write(Encoding.Default.GetBytes(richTextBox2.Text), 0, richTextBox2.Text.Length);
-                    // Code to write the stream goes here.
                     myStream.Close();
                 }
             }
